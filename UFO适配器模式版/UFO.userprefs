@@ -1,0 +1,22 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\UserGUI.cs">
+    <Files>
+      <File FileName="Assets\Action.cs" Line="161" Column="2" />
+      <File FileName="Assets\UserGUI.cs" Line="63" Column="4" />
+      <File FileName="Assets\Controllor.cs" Line="34" Column="15" />
+      <File FileName="Assets\DiskData.cs" Line="1" Column="1" />
+      <File FileName="Assets\DiskFactory.cs" Line="1" Column="1" />
+      <File FileName="Assets\interCon.cs" Line="13" Column="19" />
+      <File FileName="Assets\SSDirector.cs" Line="1" Column="1" />
+      <File FileName="Assets\Singletion.cs" Line="1" Column="1" />
+      <File FileName="Assets\ScoreRecorder.cs" Line="1" Column="1" />
+      <File FileName="Assets\RoundControllor.cs" Line="1" Column="1" />
+      <File FileName="Assets\DiskEditor.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
