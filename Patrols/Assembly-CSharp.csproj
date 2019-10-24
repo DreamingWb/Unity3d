@@ -58,6 +58,7 @@
      <Compile Include="Assets\ScoreRecorder.cs" />
      <Compile Include="Assets\Singleton.cs" />
      <Compile Include="Assets\UserGUI.cs" />
+     <None Include="Assets\ToonSoldiers_WW2_demo\ToonSoldiers_WW2_demo_README.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

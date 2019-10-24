@@ -10,7 +10,8 @@ public class FirstSceneController : MonoBehaviour, IUserAction, ISceneController
     public PatrolActionManager action_manager;
     public int wall_sign = 4;
     public GameObject player;
-    public float player_speed = 5; 
+    public float player_speed = 30; 
+	public float rotate_speed = 10; 
     private List<GameObject> patrols;
     private bool game_over = false;
 	public int GetScore(){return recorder.GetScore();}
@@ -51,13 +52,14 @@ public class FirstSceneController : MonoBehaviour, IUserAction, ISceneController
         patrols = patrol_factory.GetPatrols();
         for (int i = 0; i < patrols.Count; i++) action_manager.GoPatrol(patrols[i]);
     }
+	public Vector3 movement;
     public void MovePlayer(float translationX, float translationZ)
     {
         if(!game_over)
         {
-			player.transform.Translate(translationX * player_speed * Time.deltaTime, 0, translationZ * player_speed * Time.deltaTime);
-			//if (player.transform.localEulerAngles.x != 0 || player.transform.localEulerAngles.z != 0) player.transform.localEulerAngles = new Vector3(0, player.transform.localEulerAngles.y, 0);
-			//if (player.transform.position.y != 0) player.transform.position = new Vector3(player.transform.position.x, 0, player.transform.position.z);
+			Vector3 direction = new Vector3(translationX,0,translationZ).normalized;
+			player.transform.position = Vector3.MoveTowards(player.transform.position, player.transform.position+direction, player_speed * Time.deltaTime);
+			player.transform.LookAt(player.transform.position+direction);
         }
     }
 }
